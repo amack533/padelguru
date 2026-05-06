@@ -1262,8 +1262,10 @@ body.modal-open { overflow: hidden; }
     .nav-links a:not(.nav-book) { display: none; }
     .nav { padding: 0.9rem 1.1rem; }
     .logo-text { font-size: 0.85rem; }
-    .qb-row { grid-template-columns: 1fr; }
-    .qb-cta { width: 100%; justify-content: center; }
+    .hero-booking { padding: 1rem 1.1rem; }
+    .qb-row { grid-template-columns: 1fr 1fr; }
+    .qb-cta { grid-column: 1 / -1; width: 100%; justify-content: center; }
+    .qb-input { font-size: 1rem; padding: 10px 12px; }
     .hero-meta { grid-template-columns: 1fr; gap: 1rem; }
     .bm-panel { padding: 2rem 1.4rem 3rem; }
     .bm-controls { grid-template-columns: 1fr; gap: 1rem; }
