@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padel Guru Nusa Dua — Bali's Premier Padel Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+    <a href="index.html" class="nav-logo">
+        <svg viewBox="0 0 60 60" class="logo-mark" aria-hidden="true">
+            <circle cx="30" cy="30" r="29" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <ellipse cx="30" cy="17" rx="9" ry="11" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M30 4 L30 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="22" y1="13" x2="38" y2="13" stroke="currentColor" stroke-width="0.6"/>
+            <line x1="22" y1="17" x2="38" y2="17" stroke="currentColor" stroke-width="0.6"/>
+            <line x1="22" y1="21" x2="38" y2="21" stroke="currentColor" stroke-width="0.6"/>
+            <line x1="26" y1="9" x2="26" y2="25" stroke="currentColor" stroke-width="0.6"/>
+            <line x1="30" y1="9" x2="30" y2="25" stroke="currentColor" stroke-width="0.6"/>
+            <line x1="34" y1="9" x2="34" y2="25" stroke="currentColor" stroke-width="0.6"/>
+            <path d="M22 32 Q30 28 38 32 Q42 38 38 46 L22 46 Q18 38 22 32 Z" fill="currentColor" opacity="0.9"/>
+            <path d="M30 28 L26 38 L30 42 L34 38 Z" fill="currentColor" opacity="0.9"/>
+        </svg>
+        <span class="logo-text">PADEL GURU<span class="logo-sub">Nusa Dua</span></span>
+    </a>
+    <nav class="nav-links">
+        <a href="index.html#courts">Courts</a>
+        <a href="index.html#facilities">Facilities</a>
+        <a href="index.html#location">Location</a>
+        <a href="about.html">About</a>
+        <button class="btn-primary nav-book" data-open-booking>Book a Court</button>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-image">
+        <img src="hero.jpg" alt="Aerial view of Padel Guru courts in Nusa Dua" loading="eager">
+        <div class="hero-grade"></div>
+    </div>
+
+    <div class="hero-content">
+        <span class="eyebrow">Nusa Dua, Bali</span>
+        <h1 class="hero-title">Padel,<br>played the<br><em>Guru way.</em></h1>
+        <p class="hero-lede">Five championship courts, an indoor padbol, and a clubhouse built around the game. Open daily, bookable in seconds.</p>
+
+        <div class="hero-booking">
+            <div class="quick-book">
+                <label class="qb-label">Quick book</label>
+                <div class="qb-row">
+                    <div class="qb-field">
+                        <span class="qb-mini">Date</span>
+                        <input type="date" id="quickDate" class="qb-input">
+                    </div>
+                    <div class="qb-field">
+                        <span class="qb-mini">Players</span>
+                        <select id="quickPlayers" class="qb-input">
+                            <option value="2">2 players</option>
+                            <option value="4" selected>4 players</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary qb-cta" data-open-booking>Find Slots →</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-meta">
+            <div><strong>05:00 → 23:00</strong><span>Daily</span></div>
+            <div><strong>5 courts</strong><span>4 padel · 1 padbol</span></div>
+            <div><strong>5,000 m²</strong><span>Sports campus</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- COURTS / BOOKING TEASER -->
+<section class="courts" id="courts">
+    <div class="section-head">
+        <span class="eyebrow">The courts</span>
+        <h2>Real grass underfoot.<br>Real glass walls. <em>Real padel.</em></h2>
+    </div>
+
+    <div class="court-grid">
+        <article class="court-card" data-court="1">
+            <div class="court-img"><img src="court_padel.jpg" alt="Indoor padel court"></div>
+            <div class="court-meta">
+                <div class="court-num">01 — 04</div>
+                <h3>Padel Courts</h3>
+                <p>Tournament-spec indoor courts under our cathedral roof. Climate-controlled. LED-lit for evening play.</p>
+                <div class="court-tags">
+                    <span class="tag">Indoor</span>
+                    <span class="tag">Tournament-spec</span>
+                    <span class="tag">90 min slots</span>
+                </div>
+                <div class="court-foot">
+                    <div class="court-price">From <strong>IDR 280k</strong> / 90 min</div>
+                    <button class="btn-secondary" data-open-booking data-preset-court="padel">Book →</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="court-card" data-court="5">
+            <div class="court-img"><img src="court_padbol.jpg" alt="Padbol court"></div>
+            <div class="court-meta">
+                <div class="court-num">05</div>
+                <h3>Padbol Court</h3>
+                <p>Bali's first padbol court. Football meets padel. Walled, fast, addictive. One of a kind on the island.</p>
+                <div class="court-tags">
+                    <span class="tag">Outdoor</span>
+                    <span class="tag">Padbol</span>
+                    <span class="tag">60 min slots</span>
+                </div>
+                <div class="court-foot">
+                    <div class="court-price">From <strong>IDR 220k</strong> / 60 min</div>
+                    <button class="btn-secondary" data-open-booking data-preset-court="padbol">Book →</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="facilities" id="facilities">
+    <div class="section-head">
+        <span class="eyebrow">More than the game</span>
+        <h2>Café, sauna, lounge,<br>proshop, sun.</h2>
+        <p class="lede">A 5,000 m² campus designed so the day after the match is as good as the match itself.</p>
+    </div>
+
+    <div class="fac-grid">
+        <div class="fac-card large">
+            <img src="cafe.jpg" alt="Café and Bar">
+            <div class="fac-text">
+                <h4>Café &amp; Bar</h4>
+                <p>Cold-pressed juices, hot meals, post-game drinks. Open from 06:00.</p>
+            </div>
+        </div>
+        <div class="fac-card">
+            <img src="recline.jpg" alt="Recliner lounge">
+            <div class="fac-text">
+                <h4>Recliner Lounge</h4>
+                <p>Watch the courts, sink in. Members favourite.</p>
+            </div>
+        </div>
+        <div class="fac-card">
+            <img src="proshop.jpg" alt="Proshop">
+            <div class="fac-text">
+                <h4>Proshop</h4>
+                <p>Rackets from HEAD, Bullpadel, Adidas. Demo rackets free for members.</p>
+            </div>
+        </div>
+        <div class="fac-card sauna">
+            <div class="fac-text fac-text-icon">
+                <h4>Sauna &amp; Showers</h4>
+                <p>Bali heat in, Bali heat out. Recovery the way it should be.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+    <div class="loc-text">
+        <span class="eyebrow">Find us</span>
+        <h2>Five minutes from the airport.<br>Ten from Nusa Dua beach.</h2>
+        <div class="loc-address">
+            <p class="loc-line">Jalan Bypass Ngurah Rai 88A</p>
+            <p class="loc-line">Nusa Dua — Benoa Toll Road</p>
+            <p class="loc-line">Kuta Selatan, Badung, Bali 80361</p>
+        </div>
+        <div class="loc-actions">
+            <a class="btn-primary loc-cta" href="https://www.google.com/maps/dir/?api=1&destination=Padel+Guru+Nusa+Dua+Bali&destination_place_id=Jalan+Bypass+Ngurah+Rai+88A+Kuta+Selatan+Badung+Bali" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Open in Google Maps
+            </a>
+            <a class="btn-ghost" href="https://maps.apple.com/?q=Padel+Guru+Nusa+Dua+Bali&address=Jalan+Bypass+Ngurah+Rai+88A,+Kuta+Selatan,+Badung,+Bali" target="_blank" rel="noopener">
+                Open in Apple Maps →
+            </a>
+        </div>
+        <div class="loc-hours">
+            <div><strong>Opening hours</strong><br>Daily — 05:00 to 23:00</div>
+            <div><strong>Phone</strong><br>+62 819 0813 6990</div>
+            <div><strong>Email</strong><br>multidimensisportindo@gmail.com</div>
+        </div>
+    </div>
+
+    <div class="loc-map">
+        <iframe
+          src="https://www.google.com/maps?q=-8.745,115.176&hl=en&z=14&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map to Padel Guru Nusa Dua">
+        </iframe>
+        <a class="map-overlay-btn" href="https://www.google.com/maps/dir/?api=1&destination=Padel+Guru+Nusa+Dua+Bali" target="_blank" rel="noopener">Get directions →</a>
+    </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+    <h2>Ready to play?</h2>
+    <p>Booking takes under a minute.</p>
+    <button class="btn-primary btn-lg" data-open-booking>Book a court now →</button>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="foot-cols">
+        <div>
+            <div class="foot-logo">
+                <svg viewBox="0 0 60 60" class="logo-mark" aria-hidden="true">
+                    <circle cx="30" cy="30" r="29" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <ellipse cx="30" cy="17" rx="9" ry="11" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M30 4 L30 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <line x1="22" y1="13" x2="38" y2="13" stroke="currentColor" stroke-width="0.6"/>
+                    <line x1="22" y1="17" x2="38" y2="17" stroke="currentColor" stroke-width="0.6"/>
+                    <line x1="22" y1="21" x2="38" y2="21" stroke="currentColor" stroke-width="0.6"/>
+                    <line x1="26" y1="9" x2="26" y2="25" stroke="currentColor" stroke-width="0.6"/>
+                    <line x1="30" y1="9" x2="30" y2="25" stroke="currentColor" stroke-width="0.6"/>
+                    <line x1="34" y1="9" x2="34" y2="25" stroke="currentColor" stroke-width="0.6"/>
+                    <path d="M22 32 Q30 28 38 32 Q42 38 38 46 L22 46 Q18 38 22 32 Z" fill="currentColor" opacity="0.9"/>
+                    <path d="M30 28 L26 38 L30 42 L34 38 Z" fill="currentColor" opacity="0.9"/>
+                </svg>
+                <span>Padel Guru<br><small>Nusa Dua, Bali</small></span>
+            </div>
+        </div>
+        <div>
+            <h5>Visit</h5>
+            <p>Jalan Bypass Ngurah Rai 88A<br>Kuta Selatan, Badung, Bali</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Padel+Guru+Nusa+Dua+Bali" target="_blank" rel="noopener">Get directions →</a>
+        </div>
+        <div>
+            <h5>Contact</h5>
+            <p>+62 819 0813 6990<br>hello@padelguru.id</p>
+        </div>
+        <div>
+            <h5>Play</h5>
+            <a href="#" data-open-booking>Book a court</a><br>
+            <a href="about.html">About the club</a><br>
+            <a href="#facilities">Facilities</a>
+        </div>
+    </div>
+    <div class="foot-base">
+        <span>© 2026 PT Multi Dimensi Sportindo</span>
+        <span>Bali · Indonesia</span>
+    </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="booking-modal" id="bookingModal" aria-hidden="true">
+    <div class="bm-backdrop" data-close-booking></div>
+    <div class="bm-panel" role="dialog" aria-labelledby="bmTitle">
+        <button class="bm-close" data-close-booking aria-label="Close">×</button>
+        <div class="bm-head">
+            <span class="eyebrow">Book a court</span>
+            <h2 id="bmTitle">When are you playing?</h2>
+        </div>
+
+        <!-- Step 1: pick date -->
+        <div class="bm-step bm-step-1" data-step="1">
+            <div class="bm-controls">
+                <div class="bm-field">
+                    <label>Court type</label>
+                    <div class="bm-tabs">
+                        <button class="bm-tab active" data-court-type="padel">Padel</button>
+                        <button class="bm-tab" data-court-type="padbol">Padbol</button>
+                    </div>
+                </div>
+                <div class="bm-field">
+                    <label>Players</label>
+                    <div class="bm-tabs">
+                        <button class="bm-tab active" data-players="2">2</button>
+                        <button class="bm-tab" data-players="3">3</button>
+                        <button class="bm-tab" data-players="4">4</button>
+                    </div>
+                </div>
+                <div class="bm-field">
+                    <label>Slot length</label>
+                    <div class="bm-tabs">
+                        <button class="bm-tab" data-duration="60">60 min</button>
+                        <button class="bm-tab active" data-duration="90">90 min</button>
+                        <button class="bm-tab" data-duration="120">120 min</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date picker as horizontal scroll -->
+            <div class="bm-dates" id="bmDates"></div>
+
+            <h3 class="bm-subhead">Available slots <span class="bm-subhead-meta" id="bmDateLabel"></span></h3>
+            <div class="bm-slots" id="bmSlots"></div>
+        </div>
+
+        <!-- Step 2: confirm -->
+        <div class="bm-step bm-step-2" data-step="2" hidden>
+            <div class="bm-confirm">
+                <div class="bm-confirm-card">
+                    <div class="bm-confirm-row"><span>Court</span><strong id="cfCourt">Padel Court 02</strong></div>
+                    <div class="bm-confirm-row"><span>Date</span><strong id="cfDate">—</strong></div>
+                    <div class="bm-confirm-row"><span>Time</span><strong id="cfTime">—</strong></div>
+                    <div class="bm-confirm-row"><span>Players</span><strong id="cfPlayers">4</strong></div>
+                    <div class="bm-confirm-row"><span>Duration</span><strong id="cfDuration">90 min</strong></div>
+                    <div class="bm-confirm-row total"><span>Total</span><strong id="cfTotal">IDR 280,000</strong></div>
+                </div>
+
+                <div class="bm-fields">
+                    <label>Your name<input type="text" placeholder="As on ID" value=""></label>
+                    <label>Phone<input type="tel" placeholder="+62 ..." value=""></label>
+                    <label>Email<input type="email" placeholder="you@example.com" value=""></label>
+                </div>
+
+                <div class="bm-actions">
+                    <button class="btn-ghost" data-step-back>← Back</button>
+                    <button class="btn-primary btn-lg" data-confirm>Confirm booking →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: success -->
+        <div class="bm-step bm-step-3" data-step="3" hidden>
+            <div class="bm-success">
+                <div class="bm-check">
+                    <svg viewBox="0 0 60 60" width="60" height="60"><circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M18 30 L27 39 L43 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>You're booked.</h3>
+                <p>Confirmation sent to your email. See you on court.</p>
+                <div class="bm-success-card" id="cfSuccess"></div>
+                <div class="bm-actions center">
+                    <a class="btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Padel+Guru+Nusa+Dua+Bali" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Get directions
+                    </a>
+                    <button class="btn-ghost" data-close-booking>Done</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
